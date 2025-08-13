@@ -149,6 +149,7 @@
         document.getElementById('humidity').innerText = data.main.humidity;
         const iconCode = data.weather[0].icon;
         document.getElementById('weatherIcon').src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+        console.log(iconCode);
 
       } catch (error) {
         alert("Error: " + error.message);
@@ -158,3 +159,4 @@
 
 </body>
 </html>
+
